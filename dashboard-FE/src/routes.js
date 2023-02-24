@@ -16,6 +16,8 @@ import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
 import Modem from "views/admin/modem";
 import CustomGrid from "views/admin/customGrid";
+import Servingcell from "views/admin/servingcell";
+import NeighbourCell from "views/admin/servingcell/NeighbourCell";
 import RTL from "views/admin/rtl";
 
 // Auth Imports
@@ -64,6 +66,20 @@ const routes = [
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: "/custom",
     component: CustomGrid,
+  },
+  {
+    name: "Serving Cell",
+    layout: "/admin",
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: "/servingcell",
+    component: Servingcell,
+  },
+  {
+    name: "Neighbour Cell",
+    layout: "/admin",
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: "/neighbourcell",
+    component: NeighbourCell,
   },
   {
     name: "Profile",

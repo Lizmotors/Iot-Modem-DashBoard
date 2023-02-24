@@ -33,11 +33,12 @@ export default function Settings() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3030/device/63ec340b12c100d1c2522e1f", null, {
+      .get("http://localhost:3030/device/63f57f550a0c5a499676d6c4", null, {
         withCredentials: false,
       })
       .then((res) => {
         console.log("res", res);
+
         setData(res.data);
       })
       .catch((err) => {
